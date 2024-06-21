@@ -37,10 +37,15 @@
     }
 }
 
-.Nav_Bar{
+.Nav_Bar {
     display: flex;
     flex-direction: row;
     gap: 100px;
     justify-content: center;
     align-items: center;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
 }
