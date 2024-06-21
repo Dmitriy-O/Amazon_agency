@@ -15,6 +15,6 @@ public class AdController {
 
     @GetMapping("/ads")
     public List<Advertising> getAds () {
-        return Arrays.asList(new Advertising("Ad 1", 100), new Advertising("Ad 2", 200), new Advertising("Ad 3", 150));
+        return Arrays.asList(new Advertising("Google", 100), new Advertising("Tesla", 200), new Advertising("Microsoft", 150));
     }
 }

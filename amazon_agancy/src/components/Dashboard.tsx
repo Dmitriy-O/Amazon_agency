@@ -1,13 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {
-    Tooltip,
-    BarChart,
-    XAxis,
-    YAxis,
-    Legend,
-    CartesianGrid,
-    Bar,
-} from "recharts";
+import {Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis,} from "recharts";
+import './styles/DashBoard.css'
 
 type ADdata = {
     name: string,
@@ -33,18 +26,19 @@ const App: React.FC = () => {
 
     return (
         <div style={{textAlign: "center"}}>
-            <h1>Social Media Users</h1>
-            <div className="App">
+            <h1>Add Rating</h1>
+            <div className="Bar_Container">
                 <BarChart
-                    width={700}
+                    width={1000}
                     height={300}
                     data={data}
-                   margin={{
-                       top: 10,
-                       right: 10,
-                       bottom: 20,
-                       left: 40,
-                   }}
+                    margin={{
+                        top: 10,
+                        right: 10,
+                        bottom: 20,
+                        left: 40,
+                    }}
+
                     barSize={20}
                 >
                     <XAxis
